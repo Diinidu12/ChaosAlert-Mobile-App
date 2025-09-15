@@ -33,7 +33,7 @@ public class FetchLocationCoordinates extends AsyncTask<String, Void, String> {
 
         try {
             String encodedLocationName = URLEncoder.encode(locationName, "UTF-8");
-            String BASE_URL = "https://geocode.xyz/" + encodedLocationName + "?json=1&auth=270066452520134173698x111429";
+            String BASE_URL = "https://geocode.xyz/" + encodedLocationName + "?json=1&auth=Authcode";
             URL url = new URL(BASE_URL);
 
             urlConnection = (HttpURLConnection) url.openConnection();
