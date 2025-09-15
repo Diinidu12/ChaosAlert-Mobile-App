@@ -23,7 +23,7 @@ The app is tailored to Sri Lanka, focusing on critical disaster scenarios such a
 
 ### Location-Based Alerts
 - Users are notified only about disasters occurring **within a 50 km radius**  
-- Reduces unnecessary alerts and ensures relevant updates  
+- Reduces unnecessary alerts and ensures relevant updates
 
 ---
 ## Technical Overview
@@ -31,3 +31,5 @@ The app is tailored to Sri Lanka, focusing on critical disaster scenarios such a
 - Fetches real-time alerts from APIs for **tsunami** and **earthquake** warnings  
 - Integrates local reporting functionality to enhance disaster information coverage  
 ---
+
+#### * AuthCode is need to put when fething data in the code.
