@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="22dp"
+    android:gravity="center"
+    android:background="@android:color/darker_gray"
+    tools:context=".AboutUs">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What We Do:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We create applications that help people stay informed and prepared."
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:paddingEnd="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: dinidudasun123@gmail.com"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:autoLink="email"
+        android:paddingEnd="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LinkedIn: https://www.linkedin.com/in/dinidu-kiriella-671396258/"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:paddingEnd="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PH 3037 Final Project"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:paddingEnd="8dp" />
+
+</LinearLayout>

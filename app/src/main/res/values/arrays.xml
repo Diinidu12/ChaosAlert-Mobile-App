@@ -1,0 +1,96 @@
+<resources>
+    <string-array name="town_city_list">
+        <item>Abayagiri</item>
+        <item>Alawwa</item>
+        <item>Ampara</item>
+        <item>Angoda</item>
+        <item>Anuradhapura</item>
+        <item>Avissawella</item>
+        <item>Badulla</item>
+        <item>Batticaloa</item>
+        <item>Bandarawela</item>
+        <item>Bandaragama</item>
+        <item>Beruwala</item>
+        <item>Chilaw</item>
+        <item>Colombo</item>
+        <item>Colombo 1</item>
+        <item>Colombo 2</item>
+        <item>Colombo 3</item>
+        <item>Colombo 4</item>
+        <item>Colombo 5</item>
+        <item>Colombo 6</item>
+        <item>Colombo 7</item>
+        <item>Colombo 8</item>
+        <item>Colombo 9</item>
+        <item>Colombo 10</item>
+        <item>Dehiwala</item>
+        <item>Dodangoda</item>
+        <item>Divulapitiya</item>
+        <item>Galle</item>
+        <item>Gampaha</item>
+        <item>Ginigathena</item>
+        <item>Haputale</item>
+        <item>Hambantota</item>
+        <item>Hikkaduwa</item>
+        <item>Horana</item>
+        <item>Jaffna</item>
+        <item>Kalawana</item>
+        <item>Kalutara</item>
+        <item>Kandy</item>
+        <item>Kegalle</item>
+        <item>Kelaniya</item>
+        <item>Kinniya</item>
+        <item>Kiribathgoda</item>
+        <item>Kurunegala</item>
+        <item>Madampe</item>
+        <item>Mahawa</item>
+        <item>Mahiyanganaya</item>
+        <item>Matale</item>
+        <item>Matara</item>
+        <item>Mawathagama</item>
+        <item>Mannar</item>
+        <item>Marawila</item>
+        <item>Minuwangoda</item>
+        <item>Moratuwa</item>
+        <item>Mount Lavinia</item>
+        <item>Muthur</item>
+        <item>Nawalapitiya</item>
+        <item>Negombo</item>
+        <item>Padukka</item>
+        <item>Panadura</item>
+        <item>Polgasowita</item>
+        <item>Polonnaruwa</item>
+        <item>Ragama</item>
+        <item>Ratnapura</item>
+        <item>Ruwanwella</item>
+        <item>Seeduwa</item>
+        <item>Sri Jayawardenepura Kotte</item>
+        <item>Teldeniya</item>
+        <item>Trincomalee</item>
+        <item>Udugampola</item>
+        <item>Uva Paranagama</item>
+        <item>Vavuniya</item>
+        <item>Wattala</item>
+        <item>Weligama</item>
+        <item>Wewala</item>
+        <item>Yakkala</item>
+        <item>Agalawatte</item>
+        <item>Aluthgama</item>
+        <item>Attanagalla</item>
+        <item>Balapitiya</item>
+        <item>Bogawantalawa</item>
+        <item>Bopitiya</item>
+        <item>Chunnakam</item>
+        <item>Hanwella</item>
+        <item>Homagama</item>
+        <item>Ja-Ela</item>
+        <item>Kadawatha</item>
+        <item>Kandana</item>
+        <item>Kuliyapitiya</item>
+        <item>Mawanella</item>
+        <item>Moragalla</item>
+        <item>Morgah</item>
+        <item>Nagoda</item>
+        <item>Nuwara Eliya</item>
+    </string-array>
+</resources>

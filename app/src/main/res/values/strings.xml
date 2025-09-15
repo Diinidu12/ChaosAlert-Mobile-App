@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ChaosAlert</string>
+    <string name="settings">Settings</string>
+    <string name="about_us">About Us</string>
+</resources>

@@ -1,0 +1,38 @@
+
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <!-- Text styles -->
+    <style name="TextViewTitle">
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextViewLabel">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Button styles -->
+    <style name="ButtonStyle">
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/primary</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Layout styles -->
+    <style name="RectangleLayout">
+        <item name="android:background">@drawable/rectangle</item>
+        <item name="android:padding">@dimen/section_padding</item>
+        <item name="android:layout_marginTop">@dimen/rectangle_margin_top</item>
+    </style>
+</resources>

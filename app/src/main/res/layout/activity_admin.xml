@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:background="@drawable/reporter"
+    tools:context=".Admin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="13dp">
+
+        <TextView
+            android:id="@+id/reportIncidentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Report Incident"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/viewReportsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View My Reports"
+            app:layout_constraintTop_toBottomOf="@id/reportIncidentText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/locationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:padding="6dp"
+            app:layout_constraintTop_toBottomOf="@id/viewReportsButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/locationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="20sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/locationNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/locationText"
+                app:layout_constraintStart_toStartOf="parent"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="15dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/locationName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/locationNameText"
+                app:layout_constraintStart_toEndOf="@id/locationNameText"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:paddingLeft="32dp"
+                android:paddingBottom="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/locationCityTown"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="Enter City/Town" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/GPSCordinatesbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get GPS Cordinates"
+                app:layout_constraintTop_toBottomOf="@id/locationName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/latitudetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latitude: "
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/GPSCordinatesbtn"
+                app:layout_constraintStart_toStartOf="parent"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="15dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/latitude_input_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/latitudetext"
+                app:layout_constraintStart_toEndOf="@id/latitudetext"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:paddingLeft="32dp"
+                android:paddingBottom="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/latitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="Enter latitude" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/longitudetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Longitude: "
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/latitude_input_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="15dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/longitude_input_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/longitudetext"
+                app:layout_constraintStart_toEndOf="@id/longitudetext"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:paddingLeft="32dp"
+                android:paddingBottom="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/longitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="Enter longitude" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/incidentDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:padding="6dp"
+            app:layout_constraintTop_toBottomOf="@id/locationLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/incidentDetailsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Incident Details"
+                android:textSize="20sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/disasterTypeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disaster Type: "
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/incidentDetailsText"
+                app:layout_constraintStart_toStartOf="parent"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="15dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/disaster_input_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/disasterTypeText"
+                app:layout_constraintStart_toEndOf="@id/disasterTypeText"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:paddingLeft="32dp"
+                android:paddingBottom="5dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/disType"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="Enter disaster type" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dateTimeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:padding="6dp"
+            app:layout_constraintTop_toBottomOf="@id/incidentDetailsLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/dateTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date and Time"
+                android:textSize="20sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/dateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date: "
+                android:textSize="15sp"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@id/dateTimeText"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/date_input_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/dateText"
+                app:layout_constraintStart_toEndOf="@id/dateText"
+                app:layout_constraintEnd_toStartOf="@+id/pickDate"
+                android:paddingLeft="32dp"
+                android:paddingBottom="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="Enter date" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/pickDate"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_my_calendar"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Pick Date"
+                app:layout_constraintTop_toTopOf="@id/date_input_layout"
+                app:layout_constraintBottom_toBottomOf="@id/date_input_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp"/>
+
+
+            <TextView
+                android:id="@+id/timeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time: "
+                android:textSize="15sp"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@id/date_input_layout"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/time_input_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/timeText"
+                app:layout_constraintStart_toEndOf="@id/timeText"
+                app:layout_constraintEnd_toStartOf="@+id/pickTime"
+                android:paddingLeft="32dp"
+                android:paddingBottom="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="Enter time" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/pickTime"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_menu_recent_history"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Pick Time"
+                app:layout_constraintTop_toTopOf="@id/time_input_layout"
+                app:layout_constraintBottom_toBottomOf="@id/time_input_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="8dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/descriptionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:padding="6dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@id/dateTimeLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disaster Details "
+                android:gravity="center"
+                android:textSize="15sp"
+                android:paddingStart="8dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/descriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="32dp"
+                android:paddingBottom="5dp"
+                app:layout_constraintTop_toBottomOf="@id/descriptionTextView"
+                app:layout_constraintStart_toEndOf="@id/descriptionTextView"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="Enter description" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/saveData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Report Incident"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            app:layout_constraintTop_toBottomOf="@id/saveData"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

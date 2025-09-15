@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "315191759076",
+    "project_id": "disaster1-fcaa6",
+    "storage_bucket": "disaster1-fcaa6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315191759076:android:3c35904145586c30b35cf1",
+        "android_client_info": {
+          "package_name": "com.example.disaster1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChPK6kq2B1m0tv3USbKe-HIp5WG6nyQdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
