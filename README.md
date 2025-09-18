@@ -22,6 +22,7 @@ The app is tailored to Sri Lanka, focusing on critical disaster scenarios such a
 - Helps inform nearby users and authorities about ongoing incidents  
 
 ### Location-Based Alerts
+- International Tsunami and Earthquack warnings that relate to Sri Lanka are Notified the users
 - Users are notified only about disasters occurring **within a 50 km radius**  
 - Reduces unnecessary alerts and ensures relevant updates
 
